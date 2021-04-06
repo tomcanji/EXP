@@ -1,27 +1,22 @@
 // Navigation style
 // ---------------------
 
-
-body {
-  min-height: 200vh;
-}
-
-.navbar {
+#nav {
   padding-top: 63px;
   > .container-fluid {
     justify-content: flex-start;
   }
- .navbar-brand {
+  .navbar-brand {
     background: transparent;
     color: $white;
     font-size: 3rem;
- }
+  }
  .navbar-toggler {
-   margin-right: 25px;
-   &:focus {
+    margin-right: 25px;
+    &:focus {
       box-shadow: none;
-   }
- }
+    }
+  }
  .navbar-toggler-icon {
     display: flex;
     justify-content: space-between;
@@ -35,8 +30,8 @@ body {
       width: 56px;
       background: $white;
     }
- }
- .nav-item {
+  }
+  .nav-item {
     .nav-link {
       color: $white;
       font-size: 48px;
@@ -45,5 +40,150 @@ body {
         color: $brand-yellow;
       }
     }
- }
+  }
+  &.colored-section-1 {
+    .navbar-toggler {
+      &[aria-expanded="true"] {
+        .navbar-toggler-icon {
+          span {
+            background: $brand-maroon;
+          }
+        } + .navbar-brand {
+          color: $brand-maroon;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &.active {
+          color: $brand-maroon;
+        }
+      }
+    }
+  }
+  &.colored-section-2 {
+    .navbar-toggler {
+      &[aria-expanded="true"] {
+        .navbar-toggler-icon {
+          span {
+            background: $brand-yellow;
+          }
+        } + .navbar-brand {
+          color: $brand-yellow;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &.active {
+          color: $brand-yellow;
+        }
+      }
+    }
+  }
+  &.colored-section-3 {
+    .navbar-toggler {
+      &[aria-expanded="true"] {
+        .navbar-toggler-icon {
+          span {
+            background: $brand-black;
+          }
+        } + .navbar-brand {
+          color: $brand-black;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &.active {
+          color: $brand-black;
+        }
+      }
+    }
+  }
+  &.colored-section-4 {
+    .navbar-toggler {
+      &[aria-expanded="true"] {
+        .navbar-toggler-icon {
+          span {
+            background: $brand-blue;
+          }
+        } + .navbar-brand {
+          color: $brand-blue;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &.active {
+          color: $brand-blue;
+        }
+      }
+    }
+  }
+  &.colored-section-5 {
+    .navbar-toggler {
+      &[aria-expanded="true"] {
+        .navbar-toggler-icon {
+          span {
+            background: $brand-black;
+          }
+        } + .navbar-brand {
+          color: $brand-black;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &.active {
+          color: $brand-black;
+        }
+      }
+    }
+  }
+  .hovering-ball {
+    position: absolute;
+    top: -142px;
+    left: -84px;
+
+    background: black;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+
+
+
+// move this to it's file and rename accordingly
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#sec1 {
+  background-color: $brand-maroon;
+}
+#sec2  {
+  background-color: $brand-yellow;
+}
+#sec3  {
+  background-color: $brand-black;
+}
+#sec4  {
+  background-color: $brand-blue;
+}
+#sec5  {
+  background-color: $brand-black;
 }

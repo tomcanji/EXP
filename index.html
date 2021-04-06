@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <nav class="navbar fixed-top">
+    <nav id="nav" class="navbar fixed-top">
+      <div class="block">
+        <div class="hovering-ball"></div>
+      </div>
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon">
             <span></span>
             <span></span>
@@ -63,5 +66,43 @@
       </div>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      var myCarousel = document.querySelector('#hero-captions')
+      var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 10000
+      })
+    </script>
+
+    <section id="sec1">
+      <div class="outer">
+        <div class="inner">This is Section 1</div>
+      </div>
+    </section>
+    <section id="sec2">
+      <div class="outer">
+        <div class="inner">This is Section 2</div>
+      </div>
+    </section>
+    <section id="sec3">
+      <div class="outer">
+        <div class="inner">This is Section 3</div>
+      </div>
+    </section>
+    <section id="sec4">
+      <div class="outer">
+        <div class="inner">This is Section 4</div>
+      </div>
+    </section>
+    <section id="sec5">
+      <div class="outer">
+        <div class="inner">This is Section 5</div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="assets/js/app.js" charset="utf-8"></script>
   </body>
 </html>
