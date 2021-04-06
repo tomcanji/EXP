@@ -1,0 +1,49 @@
+// Navigation style
+// ---------------------
+
+
+body {
+  min-height: 200vh;
+}
+
+.navbar {
+  padding-top: 63px;
+  > .container-fluid {
+    justify-content: flex-start;
+  }
+ .navbar-brand {
+    background: transparent;
+    color: $white;
+    font-size: 3rem;
+ }
+ .navbar-toggler {
+   margin-right: 25px;
+   &:focus {
+      box-shadow: none;
+   }
+ }
+ .navbar-toggler-icon {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 56px;
+    height: 34px;
+    span {
+      display: flex;
+      height: 5px;
+      margin-bottom: 3px;
+      width: 56px;
+      background: $white;
+    }
+ }
+ .nav-item {
+    .nav-link {
+      color: $white;
+      font-size: 48px;
+      font-weight: bold;
+      &.active {
+        color: $brand-yellow;
+      }
+    }
+ }
+}

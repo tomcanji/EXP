@@ -1,0 +1,11 @@
+// Body styling
+// ------------
+body {
+  @extend %font-fix;
+  font-size: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}

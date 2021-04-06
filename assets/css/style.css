@@ -46,7 +46,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5433,7 +5433,7 @@ textarea.form-control-lg {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5535,7 +5535,7 @@ textarea.form-control-lg {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10727,6 +10727,65 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+}
+
+body {
+  font-size: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  min-height: 200vh;
+}
+
+.navbar {
+  padding-top: 63px;
+}
+.navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+  justify-content: flex-start;
+}
+.navbar .navbar-brand {
+  background: transparent;
+  color: #fff;
+  font-size: 3rem;
+}
+.navbar .navbar-toggler {
+  margin-right: 25px;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler-icon {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 56px;
+  height: 34px;
+}
+.navbar .navbar-toggler-icon span {
+  display: flex;
+  height: 5px;
+  margin-bottom: 3px;
+  width: 56px;
+  background: #fff;
+}
+.navbar .nav-item .nav-link {
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+}
+.navbar .nav-item .nav-link.active {
+  color: #ffb33f;
 }
 
 /*# sourceMappingURL=style.css.map */
