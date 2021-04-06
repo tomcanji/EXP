@@ -75,19 +75,29 @@ $(function () {
 
   function openMenu() {
     var menuAnimation = new TimelineMax()
-    menuAnimation.to(".hovering-ball", 0.5, {
+
+    menuAnimation
+    .to(".hovering-ball", 0.5, {
       width: '682px',
       height: '682px',
-      ease: Sine.easeInOut
+      ease: 'expo.in',
+      x: 0,
+      y: 0,
+      top: '-242px',
+      left: '-184px'
     });
   }
 
   function closeMenu() {
     var menuAnimation = new TimelineMax()
     menuAnimation.to(".hovering-ball", 0.5, {
-      width: '0',
-      height: '0',
-      ease: Sine.easeInOut
+      width: 0,
+      height: 0,
+      ease: 'expo.out',
+      left: '38px',
+      top: '87px',
+      x: 15,
+      y: 15
     });
   }
 
