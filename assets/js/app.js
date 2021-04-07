@@ -70,8 +70,8 @@ $(function () {
 
 
   // Menu toggle animation
-  $('#nav').on('shown.bs.collapse', openMenu)
-  $('#nav').on('hidden.bs.collapse', closeMenu)
+  $('#nav').on('show.bs.collapse', openMenu)
+  $('#nav').on('hide.bs.collapse', closeMenu)
 
   function openMenu() {
     var menuAnimation = new TimelineMax()
@@ -94,7 +94,7 @@ $(function () {
       width: 0,
       height: 0,
       ease: 'expo.out',
-      left: '38px',
+      left: '96px',
       top: '87px',
       x: 15,
       y: 15
