@@ -1,11 +1,35 @@
 $(function () {
 
+  // circle cursor
+  var $circle = $('.circle');
+  function moveCircle(e) {
+    TweenLite.to($circle, 0.3, {
+      css: {
+        left: e.pageX,
+        top: e.pageY,
+        display: 'flex'
+      }
+    });
+  }
+  function reMoveCircle(e) {
+    TweenLite.to($circle, 0.3, {
+      css: {
+        display: 'none'
+      }
+    });
+  }
+
+  $('#sound').on('mousemove', moveCircle);
+  $('#sound').on('mouseleave', reMoveCircle);
+
   // menu colors for sections
   var ctrl = new ScrollMagic.Controller();
 
+  var soundDuration = $('#sound').height()
   new ScrollMagic.Scene({
-    triggerElement: '#sec1',
-    triggerHook: 0.15
+    triggerElement: '#sound',
+    triggerHook: 0,
+    duration: soundDuration
   })
   .setClassToggle("#nav", "colored-section-1")
   .addIndicators({
