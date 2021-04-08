@@ -7,6 +7,10 @@ $(function () {
     interval: 10000
   })
 
+  $('#hero').on('slide.bs.carousel', function () {
+    console.log('moved');
+  } )
+
   // circle cursor
   var $circle = $('.circle');
   function moveCircle(e) {

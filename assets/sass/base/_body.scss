@@ -3,6 +3,7 @@
 body {
   @extend %font-fix;
   font-size: 100%;
+  font-family: $font-family-base;
 }
 
 html {
