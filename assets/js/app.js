@@ -1,5 +1,12 @@
 $(function () {
 
+
+  // hero
+  var myCarousel = document.querySelector('#hero')
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 10000
+  })
+
   // circle cursor
   var $circle = $('.circle');
   function moveCircle(e) {
@@ -32,12 +39,6 @@ $(function () {
     duration: soundDuration
   })
   .setClassToggle("#nav", "colored-section-1")
-  .addIndicators({
-    colorTrigger: "white",
-    colorStart: "white",
-    colorEnd: "white",
-    indent: 40
-  })
   .addTo(ctrl);
 
   new ScrollMagic.Scene({
@@ -45,12 +46,6 @@ $(function () {
     triggerHook: 0.15
   })
   .setClassToggle("#nav", "colored-section-2")
-  .addIndicators({
-    colorTrigger: "blue",
-    colorStart: "blue",
-    colorEnd: "blue",
-    indent: 140
-  })
   .addTo(ctrl);
 
   new ScrollMagic.Scene({
@@ -58,12 +53,6 @@ $(function () {
     triggerHook: 0.15
   })
   .setClassToggle("#nav", "colored-section-3")
-  .addIndicators({
-    colorTrigger: "blue",
-    colorStart: "blue",
-    colorEnd: "blue",
-    indent: 140
-  })
   .addTo(ctrl);
 
   new ScrollMagic.Scene({
@@ -71,12 +60,6 @@ $(function () {
     triggerHook: 0.15
   })
   .setClassToggle("#nav", "colored-section-4")
-  .addIndicators({
-    colorTrigger: "blue",
-    colorStart: "blue",
-    colorEnd: "blue",
-    indent: 140
-  })
   .addTo(ctrl);
 
   new ScrollMagic.Scene({
@@ -84,12 +67,6 @@ $(function () {
     triggerHook: 0.15
   })
   .setClassToggle("#nav", "colored-section-5")
-  .addIndicators({
-    colorTrigger: "blue",
-    colorStart: "blue",
-    colorEnd: "blue",
-    indent: 140
-  })
   .addTo(ctrl);
 
 
