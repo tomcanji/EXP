@@ -1,0 +1,205 @@
+// Navigation style
+// ---------------------
+
+#nav {
+  padding-top: 54px;
+  > .container-fluid {
+    justify-content: flex-start;
+  }
+  .navbar-brand {
+    background: transparent;
+    color: $white;
+    font-size: 3rem;
+  }
+ .navbar-toggler {
+    margin-right: 25px;
+    margin-left: 57px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .navbar-collapse {
+    margin-left: 70px;
+    padding-top: 4px;
+  }
+  .navbar-toggler-icon {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 56px;
+    height: 34px;
+    span {
+      display: flex;
+      height: 5px;
+      margin-bottom: 3px;
+      width: 56px;
+      background: $white;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      color: $white;
+      font-size: 48px;
+      font-weight: bold;
+      padding-bottom: 0;
+      line-height: 1.3;
+      &.active {
+        color: $brand-yellow;
+      }
+    }
+  }
+  &.colored-section-1 {
+    .navbar-toggler {
+      &[aria-expanded="true"] {
+        .navbar-toggler-icon {
+          span {
+            background: $brand-maroon;
+          }
+        } + .navbar-brand {
+          color: $brand-maroon;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &.active {
+          color: $brand-maroon;
+        }
+      }
+    }
+  }
+  &.colored-section-2 {
+    .navbar-toggler {
+      &[aria-expanded="true"] {
+        .navbar-toggler-icon {
+          span {
+            background: $brand-yellow;
+          }
+        } + .navbar-brand {
+          color: $brand-yellow;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &.active {
+          color: $brand-yellow;
+        }
+      }
+    }
+  }
+  &.colored-section-3 {
+    .navbar-toggler {
+      &[aria-expanded="true"] {
+        .navbar-toggler-icon {
+          span {
+            background: $brand-black;
+          }
+        } + .navbar-brand {
+          color: $brand-black;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &.active {
+          color: $brand-black;
+        }
+      }
+    }
+    .hovering-ball {
+      background: $brand-blue;
+    }
+  }
+  &.colored-section-4 {
+    .navbar-toggler {
+      &[aria-expanded="true"] {
+        .navbar-toggler-icon {
+          span {
+            background: $brand-blue;
+          }
+        } + .navbar-brand {
+          color: $brand-blue;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &.active {
+          color: $brand-blue;
+        }
+      }
+    }
+    .hovering-ball {
+      background: $brand-black;
+    }
+  }
+  &.colored-section-5 {
+    .navbar-toggler {
+      &[aria-expanded="true"] {
+        .navbar-toggler-icon {
+          span {
+            background: $brand-black;
+          }
+        } + .navbar-brand {
+          color: $brand-black;
+        }
+      }
+    }
+    .nav-item {
+      .nav-link {
+        color: $white;
+        &.active {
+          color: $brand-black;
+        }
+      }
+    }
+    .hovering-ball {
+      background: $brand-blue;
+    }
+  }
+  .hovering-ball {
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    z-index: -1;
+    top: 87px;
+    left: 96px;
+    width: 1px;
+    height: 1px;
+  }
+}
+
+
+
+// move this to it's file and rename accordingly
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#sound {
+  background-color: $brand-maroon;
+}
+#sec2  {
+  background-color: $brand-yellow;
+}
+#sec3  {
+  background-color: $brand-black;
+}
+#sec4  {
+  background-color: $brand-blue;
+}
+#sec5  {
+  background-color: $brand-black;
+}

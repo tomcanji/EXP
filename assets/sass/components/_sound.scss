@@ -1,0 +1,49 @@
+// Sound section style
+// ---------------------
+
+#sound {
+  > .container {
+    > .row {
+      align-items: center;
+    }
+  }
+  img {
+    max-width: 254px;
+    float: left;
+    &:last-child {
+      margin-top: 217px;
+    }
+  }
+  h2 {
+    padding-top: 10px;
+    font-size: 74px;
+    line-height: 90px;
+    color: $white;
+    font-weight: bold;
+  }
+  p {
+    font-size: 51px;
+    color: $brand-black;
+    font-weight: normal;
+    line-height: 61px;
+  }
+}
+
+
+
+.circle {
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  border: 2px solid $white;
+  color: $white;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+}

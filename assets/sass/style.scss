@@ -1,0 +1,10 @@
+@import "custom-variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+// Import files
+// -----------------
+@import "utils/global";
+@import "base/global";
+@import "layouts/global";
+@import "components/global";

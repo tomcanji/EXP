@@ -1,0 +1,9 @@
+# ignore node dependency directories
+node_modules/
+
+
+# SASS files
+**/*.css.map
+**/.sass-cache
+*.scssc
+*.map
